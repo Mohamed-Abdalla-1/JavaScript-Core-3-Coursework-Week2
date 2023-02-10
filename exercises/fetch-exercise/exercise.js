@@ -17,15 +17,12 @@ Open index.html in your browser. Every time you refresh the page,
 a different greeting should be displayed in the box.
 */
 
-
-
 https: fetch("https://holy-snow-6805.fly.dev/api/greetings")
   .then(function (response) {
     return response.json();
   })
   .then(function (greeting) {
     // Write the code to display the greeting text here
-    console.log(greeting)
-    document.getElementById("greeting-text").innerHTML = greeting.hello
-    
+    console.log(greeting);
+    document.getElementById("greeting-text").innerHTML = greeting.hello;
   });
